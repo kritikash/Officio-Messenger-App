@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/register_image"
+        android:layout_width="397dp"
+        android:layout_height="225dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/signup_photo"></ImageView>
+
+    <TextView
+        android:id="@+id/MemberType"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@+id/register_image"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="400dp"
+        android:text="Member Type"
+        android:textColor="@color/Switch"
+        android:textSize="20sp"
+
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="137dp"
+        android:layout_height="201dp"
+        android:layout_alignEnd="@+id/register_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="223dp"
+        android:layout_marginEnd="222dp">
+
+
+        <RadioButton
+            android:id="@+id/admin_radiobutton"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radiogroup"
+            android:layout_alignTop="@+id/radiogroup"
+
+
+            android:layout_alignBottom="@+id/radiogroup"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:text="Admin" />
+
+        <RadioButton
+
+            android:id="@+id/user_radiobutton"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:checked="true"
+            android:text="User" />
+
+
+    </RadioGroup>
+
+
+
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_image"
+        android:layout_alignParentStart="true"
+        android:hint="Email..."
+        android:inputType="textEmailAddress"
+        android:background="@drawable/inputs"
+        android:padding="4dp"
+        android:drawableStart="@drawable/email"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_email"
+        android:layout_alignParentStart="true"
+        android:hint="Password..."
+        android:inputType="textPassword"
+        android:background="@drawable/inputs"
+        android:padding="4dp"
+        android:drawableStart="@drawable/password"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        />
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_password"
+        android:padding="4dp"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/buttons"
+        />
+    <TextView
+        android:id="@+id/already_have_an_account_link"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_button"
+        android:layout_alignParentStart="true"
+        android:text="Already have an Account ?"
+
+
+
+
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginRight="23dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+
+</RelativeLayout>
