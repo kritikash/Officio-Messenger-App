@@ -1,3 +1,3 @@
-#Hello Chat Messenger Application 
-Frontend UI for chat application
-Appended messages
+Officio-Messenger-App is an android chat application.
+
+
